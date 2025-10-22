@@ -180,8 +180,7 @@
     - id: MothroachSpawn # DeltaV
     - id: DerelictCyborgSyndicateSpawn # Goobstation - usually calm
 #    - id: MalignRiftSpawn # DeltaV | Orion-Remove
-    - id: FloorGoblinSpawn # Goobstation
-    - id: HellGooseSpawn # Goobstation
+    - id: FloorGoblinMidRound # Goobstation
 
 - type: entityTable
   id: BasicAntagEventsTable
