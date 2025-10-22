@@ -9,6 +9,12 @@
   },
   "states": [
     {
+      "name": "id"
+    },
+    {
+      "name": "box_medical"
+    },
+    {
       "name": "beaker"
     },
     {
