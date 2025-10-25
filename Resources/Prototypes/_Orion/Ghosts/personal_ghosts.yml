@@ -11,6 +11,7 @@
 - type: entity
   parent: MobObserverCkey
   id: MobObserverCkeyPlaceholder
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/placeholder.rsi
@@ -46,6 +47,7 @@
   parent: MobObserver
   id: MobObserver-PuroSlavKing
   description: Hello World!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/PuroSlavKing.rsi
@@ -64,6 +66,7 @@
   parent: MobObserver
   id: MobObserver-no_mad
   description: BoO-oO!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/no_mad.rsi
@@ -82,6 +85,7 @@
   parent: MobObserver
   id: MobObserver-yourmommy
   description: Meow!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/yourmommy.rsi
@@ -100,6 +104,7 @@
   parent: MobObserver
   id: MobObserver-GodFace
   description: BoO-oO!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/GodFace.rsi
@@ -118,6 +123,7 @@
   parent: MobObserver
   id: MobObserver-LIZARDWIZARD
   description: BoO-oO!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/LIZARDWIZARD.rsi
@@ -136,6 +142,7 @@
   parent: MobObserver
   id: MobObserver-Vetochka
   description: BoO-oO!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/Vetochka.rsi
@@ -154,6 +161,7 @@
   parent: MobObserver
   id: MobObserver-kreses
   description: Hiss!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/kreses.rsi
@@ -172,6 +180,7 @@
   parent: MobObserver
   id: MobObserver-scituzer2
   description: Yarr!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/scituzer2.rsi
@@ -190,6 +199,7 @@
   parent: MobObserver
   id: MobObserver-trest100
   description: Skibidi-psiop es es!
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Orion/Ghosts/ckey/trest100.rsi
