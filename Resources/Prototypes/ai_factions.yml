@@ -77,6 +77,7 @@
   - Wizard
   - PirateFaction # goob - pirates
   - Xenoborg
+  - Wraith # Goobstation - Wraith
 
 - type: npcFaction
   id: Mouse
@@ -124,6 +125,7 @@
   friendly: # Goobstation
   - Wizard
   - Shadowling # Einstein Engines - Shadowlings
+  - Wraith # Goobstation - Wraith
 
 - type: npcFaction
   id: SimpleNeutral
@@ -148,6 +150,7 @@
   - Wizard # goob edit - wizard
   - PirateFaction # goob - pirates
   - Shadowling # Einstein Engines - Shadowlings
+  - Wraith # Goobstation - Wraith
 
 - type: npcFaction
   id: Xeno
@@ -169,6 +172,7 @@
   - Heretic # goob edit - heretics
   - Blob # Goobstation - Blob
   - PirateFaction # goob - pirates
+  - Wraith # Goobstation - Wraith
   friendly: # Goobstation
     - Wizard
 
@@ -195,6 +199,7 @@
   - Wizard # goob edit - wizard
   - PirateFaction # goob - pirates
   - Xenoborg
+  - Wraith # Goobstation - Wraith
 
 - type: npcFaction
   id: Revolutionary
@@ -238,6 +243,7 @@
   - Shadowling # Einstein Engines - Shadowlings
   - Wizard # goob edit - wizard
   - PirateFaction # goob - pirates
+  - Wraith # Goobstation - Wraith
 
 # Balloons Factions Edit:
 - type: npcFaction
@@ -271,3 +277,22 @@
   - AllHostile
   - Blob # Goobstation - Blob
   - Shadowling # Einstein Engines - Shadowlings
+
+- type: npcFaction
+  id: Wraith # Goobstation
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - Xeno
+  - AllHostile
+  - Xenoborg
+  - Heretic # goob edit - heretics
+  - Blob # Goobstation - Blob
+  - PirateFaction # goob - pirates
+  friendly: # Goobstation
+  - Wraith # Goobstation
