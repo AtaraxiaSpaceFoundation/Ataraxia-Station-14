@@ -105,6 +105,7 @@ using Content.Shared._Orion.Antag;
 using Content.Shared._Orion.Antag.Components;
 using Content.Shared._Orion.CustomGhost;
 using Content.Shared._Shitmed.Body;
+using Content.Shared._Shitmed.Targeting;
 using Content.Shared._White.Xenomorphs.Infection;
 using Content.Shared.Actions;
 using Content.Shared.Body.Components;
@@ -868,11 +869,11 @@ namespace Content.Server.Ghost
                         var damageType = HasComp<SiliconComponent>(playerEntity)
                             ? IonDamageType
                             : AsphyxiationDamageType;
-                        DamageSpecifier damage = new(_prototypeManager.Index<DamageTypePrototype>(damageType), dealtDamage);
+                        DamageSpecifier damage = new(_prototypeManager.Index(damageType), dealtDamage);
 
                         if (TryComp<BodyComponent>(playerEntity, out var body)
                             && body.BodyType == BodyType.Complex
-                            && body.RootContainer.ContainedEntities.FirstOrNull() is { } root)
+                            && body.RootContainer.ContainedEntities.FirstOrNull() is not null)
                             _damageable.TryChangeDamage(playerEntity,
                                 damage,
                                 true,
