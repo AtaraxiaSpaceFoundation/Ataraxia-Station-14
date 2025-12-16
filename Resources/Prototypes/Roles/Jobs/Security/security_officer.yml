@@ -97,11 +97,11 @@
   supervisors: job-supervisors-hos
   canBeAntag: false
   guides: # goobstation
-  - Security
-  - Legal SOP
-  - OfficerCadet SOP
-  - CorporateJudo
-  - Alert Levels
+  # Orion-Edit-Start
+  - SpaceLaw
+  - SOP-Security-Officer
+  - SOP-Security
+  # Orion-Edit-End
   goobcoins: 30 #Goob content
   access:
   - Security

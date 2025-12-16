@@ -79,7 +79,7 @@
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
   guides: # goobstation
-  - Bartender
+#  - Bartender # Orion-Edit: Removed because dont have this SOP
   - Drinks
   goobcoins: 10 #Goob content
   access:

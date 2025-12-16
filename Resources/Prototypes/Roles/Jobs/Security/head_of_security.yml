@@ -162,13 +162,12 @@
   supervisors: job-supervisors-captain
   canBeAntag: false
   guides: # goobstation
-  - Security
+  # Orion-Edit-Start
   - SpaceLaw
-  - Legal SOP
-  - Command
-  - HeadOfSecurity SOP
-  - Security SOP
-  - Alert Levels
+  - SOP-Security-HeadOfSecurity
+  - SOP-Security
+  - SOP-Alerts
+  # Orion-Edit-End
   goobcoins: 45 #Goob content
   access:
   - HeadOfSecurity
