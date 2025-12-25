@@ -14,7 +14,7 @@
 
 ---
 
-**Orion** — это русскоязычный форк [Goob Station](https://github.com/Goob-Station/Goob-Station), который стремится возродить дух классического геймплея Space Station 13, черпая вдохновение из таких проектов, как [/tg/station](https://github.com/tgstation/tgstation) и [Shiptest](https://github.com/shiptest-ss13/Shiptest). Мы фокусируемся на сочетании проверенных временем механик с инновационными идеями, создавая уникальный и приятный опыт игры в космическое безумие.
+**Ataraxia** — это форк [Orion](https://github.com/AtaraxiaSpaceFoundation/Orion-Station-14), который в свою очередь является русскоязычным форком [Goob Station](https://github.com/Goob-Station/Goob-Station), который стремится возродить дух классического геймплея Space Station 13, черпая вдохновение из таких проектов, как [/tg/station](https://github.com/tgstation/tgstation) и [Shiptest](https://github.com/shiptest-ss13/Shiptest). Мы фокусируемся на сочетании проверенных временем механик с инновационными идеями, создавая уникальный и приятный опыт игры в космическое безумие.
 
 ---
 
@@ -25,7 +25,7 @@
 </div>
 
 [<img src="https://github.com/AtaraxiaSpaceFoundation/asset-dump/blob/master/Misc/Discord/discord-banner.png" alt="Discord" width="150" align="left">](https://discord.gg/K48JujjjsC)
-**[Discord Server](https://discord.gg/K48JujjjsC)**<br>В космосе вас никто не услышит.
+**[Discord Server (Orion)](https://discord.gg/K48JujjjsC)**<br>В космосе вас никто не услышит.
 
 [<img src="https://i.imgur.com/XiS9QP5.png" alt="ASF" width="150" align="left">](https://github.com/AtaraxiaSpaceFoundation)
 **[Ataraxia Space Foundation](https://github.com/AtaraxiaSpaceFoundation)**<br>Специализируемся на разработке этого билда.
@@ -38,19 +38,6 @@
 ![Активность PR](https://repobeats.axiom.co/api/embed/fb55493406a54b21282bac43ecb28472b47a762c.svg "ZZZ")
 
 </div>
-
----
-<div align="center">
-
-## Политика Orion
-
-Любой сервер, заявляющий, что он является официальным представителем этого билда — не одобрен этой организацией.
-Однако мы хотели бы пригласить всех желающих создать сервер на базе билда Orion.
-
-</div>
-
-> [!WARNING]  
-> **Orion не имеет официальных игровых серверов**.
 
 ---
 
