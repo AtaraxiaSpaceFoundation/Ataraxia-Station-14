@@ -2,3 +2,19 @@
   id: ReptilianHisses
   files:
   - /Audio/_Orion/Voice/Reptilian/reptilian_hiss.ogg
+
+- type: soundCollection
+  id: MaleMoan
+  files:
+  - /Audio/_Orion/Voice/Misc/male_moan_1.ogg
+  - /Audio/_Orion/Voice/Misc/male_moan_2.ogg
+  - /Audio/_Orion/Voice/Misc/male_moan_3.ogg
+
+- type: soundCollection
+  id: FemaleMoan
+  files:
+  - /Audio/_Orion/Voice/Misc/female_moan_1.ogg
+  - /Audio/_Orion/Voice/Misc/female_moan_2.ogg
+  - /Audio/_Orion/Voice/Misc/female_moan_3.ogg
+  - /Audio/_Orion/Voice/Misc/female_moan_4.ogg
+  - /Audio/_Orion/Voice/Misc/female_moan_5.ogg

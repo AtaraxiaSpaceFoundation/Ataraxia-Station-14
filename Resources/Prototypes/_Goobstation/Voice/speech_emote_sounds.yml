@@ -14,6 +14,10 @@
       path: /Audio/Machines/Nuke/general_beep.ogg
     Scream:
       path: /Audio/Machines/Nuke/general_beep.ogg
+    # Orion-Start
+    Moan: # Peak
+      collection: FemaleMoan
+    # Orion-End
 
 - type: emoteSounds
   id: ShadowCloak
@@ -42,6 +46,10 @@
       collection: HissGasp
     DefaultDeathgasp:
       path: /Audio/_Goobstation/Heretic/hiss/lowHiss1.ogg
+    # Orion-Start
+    Moan:
+      collection: /Audio/_Goobstation/Heretic/hiss/hiss5.ogg
+    # Orion-End
 
 - type: emoteSounds
   id: Duende
