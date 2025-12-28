@@ -48,7 +48,7 @@
       path: /Audio/_Goobstation/Heretic/hiss/lowHiss1.ogg
     # Orion-Start
     Moan:
-      collection: /Audio/_Goobstation/Heretic/hiss/hiss5.ogg
+      path: /Audio/_Goobstation/Heretic/hiss/hiss5.ogg
     # Orion-End
 
 - type: emoteSounds
