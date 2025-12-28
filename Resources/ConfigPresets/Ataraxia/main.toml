@@ -1,8 +1,8 @@
 ﻿[game]
-hostname = "Ataraxia 🌌"
+hostname = "[RU] BACKMEN — ATARAXIA🌌 [MRP+]"
 maxplayers = 70
 soft_max_players = 60
-desc="""📣 Ataraxia на базе русскоязычной сборки Goob-Orion!"""
+desc="""🎭 Один из северов Backmen! /n📘 Высокий уровень РП /n🛠️ сборка Goob /n🔞 NSFW разрешён. /nТвоё приключение начинается здесь!"""
 map_pool="DefaultMapPool"
 lobbyenabled = true
 
@@ -68,4 +68,4 @@ timermap = 60
 
 [hub]
 advertise = true
-tags = "lang:ru,rp:low,region:eu_e,18+"
+tags = "lang:ru,rp:med,region:eu_e,18+"
