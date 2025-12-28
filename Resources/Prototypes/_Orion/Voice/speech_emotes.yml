@@ -36,6 +36,12 @@
     - Vocal
   chatMessages: ["chat-emote-msg-moan"]
   chatTriggers:
+    - moan
+    - moan!
+    - moan.
+    - moans
+    - moans!
+    - moans.
     - простанывает
     - простанывает!
     - простанывает.
