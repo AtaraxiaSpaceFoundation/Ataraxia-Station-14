@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/BlueMoon-Labs/BlueMoon-Station/blob/ae6d3f422128b5e535ca7d2a4ea1a9217f76760b/icons/obj/genitals/hud.dmi | Edited by PuroSlavKing (Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "arousal0"
+    },
+    {
+      "name": "arousal10"
+    },
+    {
+      "name": "arousal20"
+    },
+    {
+      "name": "arousal30"
+    },
+    {
+      "name": "arousal40"
+    },
+    {
+      "name": "arousal50"
+    },
+    {
+      "name": "arousal60"
+    },
+    {
+      "name": "arousal70"
+    },
+    {
+      "name": "arousal80"
+    },
+    {
+      "name": "arousal90"
+    },
+    {
+      "name": "arousal100"
+    },
+    {
+      "name": "arousal"
+    }
+  ]
+}

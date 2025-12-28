@@ -25,3 +25,29 @@
     - хисс.
     - хисс!
     - хиссс!
+
+- type: emote
+  id: Moan
+  name: chat-emote-name-moan
+  icon: _Orion/Interface/Emotes/moan.png
+  category: Vocal
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-moan"]
+  chatTriggers:
+    - moan
+    - moan!
+    - moan.
+    - moans
+    - moans!
+    - moans.
+    - простанывает
+    - простанывает!
+    - простанывает.
+    - постанывает
+    - постанывает!
+    - постанывает.
+    - стонет
+    - стонет!
+    - стонет.

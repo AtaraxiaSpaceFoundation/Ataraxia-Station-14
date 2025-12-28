@@ -511,6 +511,7 @@
   - type: MindControllable # Goobstation
   - type: VisibleContraband # Goobstation
   - type: Posing # Orion
+  - type: Arousal # Orion
 
 - type: entity
   save: false
