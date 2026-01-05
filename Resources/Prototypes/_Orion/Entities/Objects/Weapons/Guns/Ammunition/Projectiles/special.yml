@@ -1,0 +1,10 @@
+- type: entity
+  parent: BulletHeavyRifle
+  id: BulletHeavyMinigun
+  name: minigun bullet (.15 rifle)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 11

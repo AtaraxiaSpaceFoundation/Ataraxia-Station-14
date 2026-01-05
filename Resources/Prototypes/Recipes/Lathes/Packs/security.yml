@@ -32,10 +32,12 @@
   - MagazineBoxMagnumPractice
   - MagazineBoxPistolPractice
   - MagazineBoxRiflePractice
+  - MagazineBoxRifle762Practice # Orion: New 7.62mm
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
   - MagazineLightRiflePractice
   - MagazineRiflePractice
+  - MagazineRifle762Practice # Orion: New 7.62mm
   - MagazinePistolPractice
   - SpeedLoaderMagnumPractice
   - MagazinePistolSubMachineGunPractice
@@ -51,6 +53,11 @@
   - MagazineBoxMagnum
   - MagazineBoxPistol
   - MagazineBoxRifle
+  # Orion-Start: New 7.62mm
+  - MagazineBoxRifle762
+  - MagazineRifle762
+  - MagazineRifle762Empty
+  # Orion-End
   # - MagazineLightRifle # Goobstation - remove light rifle
   # - MagazineLightRifleEmpty # Goobstation - remove light rifle
   - MagazinePistol
@@ -127,6 +134,12 @@
   - MagazineBoxPistolUranium
   - MagazineBoxRifleIncendiary
   - MagazineBoxRifleUranium
+  # Orion-Start: New 7.62mm
+  - MagazineBoxRifle762Incendiary
+  - MagazineBoxRifle762Uranium
+  - MagazineRifle762Incendiary
+  - MagazineRifle762Uranium
+  # Orion-End
   # - MagazineLightRifleIncendiary # Goobstation - remove light rifle
   # - MagazineLightRifleUranium # Goobstation - remove light rifle
   - MagazinePistolIncendiary
@@ -149,6 +162,7 @@
   - WeaponLaserCarbine
   - WeaponXrayCannon
   - WeaponTemperatureGun # Goobstation
+  - Terminus # Goobstation
 
 - type: latheRecipePack
   id: SecurityDisablers
