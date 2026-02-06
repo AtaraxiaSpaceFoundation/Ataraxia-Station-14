@@ -6,6 +6,7 @@
   - type: Sprite
     layers:
       - state: off
+        map: ["base"]
   - type: GenericVisualizer
     visuals:
       enum.VibratorVisuals.Intensity:
@@ -63,7 +64,7 @@
   parent: BaseVibrator
   id: VibratorEggPink
   name: egg vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/egg_pink_vibrator.rsi
@@ -72,7 +73,7 @@
   parent: BaseVibrator
   id: VibratorEggTeal
   name: egg vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/egg_teal_vibrator.rsi
@@ -81,7 +82,7 @@
   parent: BaseVibrator
   id: VibratorGreen
   name: green vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/green_vibrator.rsi
@@ -90,7 +91,7 @@
   parent: BaseVibrator
   id: VibratorPink
   name: pink vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/pink_vibrator.rsi
@@ -99,7 +100,7 @@
   parent: BaseVibrator
   id: VibratorRed
   name: red vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/red_vibrator.rsi
@@ -108,7 +109,7 @@
   parent: BaseVibrator
   id: VibratorTeal
   name: teal vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/teal_vibrator.rsi
@@ -117,7 +118,7 @@
   parent: BaseVibrator
   id: VibratorYellow
   name: yellow vibrator
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/yellow_vibrator.rsi
@@ -126,7 +127,7 @@
   parent: BaseVibrator
   id: VibratorMagicWand
   name: magic wand
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/magic_wand_vibrator.rsi
@@ -135,7 +136,7 @@
   parent: BaseVibrator
   id: VibratorRingPink
   name: vibro-ring
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/ring_pink_vibrator.rsi
@@ -144,7 +145,7 @@
   parent: BaseVibrator
   id: VibratorRingTeal
   name: vibro-ring
-  description: 
+  description: Vibrating!
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/ring_teal_vibrator.rsi
