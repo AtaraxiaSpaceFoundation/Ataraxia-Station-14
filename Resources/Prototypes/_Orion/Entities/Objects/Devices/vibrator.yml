@@ -1,23 +1,21 @@
 - type: entity
-  parent: ClothingUnderwearBase
+  parent: BaseItem
   id: BaseVibrator
   abstract: true
   components:
   - type: Sprite
     layers:
       - state: off
-        zIndex: 0
-      - state: off
-        zIndex: 1
-        key: VibratorVisuals.Intensity
-        visuals:
-          VibratorIntensity.Off: off
-          VibratorIntensity.Low: low
-          VibratorIntensity.Medium: medium
-          VibratorIntensity.High: high
+  - type: GenericVisualizer
+    visuals:
+      enum.VibratorVisuals.Intensity:
+        base:
+          Off: { state: off }
+          Low: { state: low }
+          Medium: { state: medium }
+          High: { state: high }
   - type: Vibrator
     isTogglable: true
-    jitterProbability: 70
     vibrationSound: /Audio/_Orion/Effects/Devices/vibration_loop.ogg
   - type: DeviceNetwork
     deviceNetId: Wireless
@@ -39,6 +37,27 @@
   - type: Clothing
     equipDelay: 2
     unequipDelay: 5
+    quickEquip: false
+    slots:
+    - underwear
+  - type: Appearance
+  # Goob-Start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/cloth_pickup.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/cloth_drop.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Goobstation/Items/handling/cloth_drop.ogg
+      params:
+        volume: -4
+  # Goob-End
 
 - type: entity
   parent: BaseVibrator

@@ -1,4 +1,5 @@
 using Robust.Shared.Audio;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared._Orion.Vibrator;
 
@@ -42,6 +43,7 @@ public sealed partial class VibratorComponent : Component
     public VibratorIntensity Intensity = VibratorIntensity.Off;
 }
 
+[Serializable, NetSerializable]
 public enum VibratorIntensity : byte
 {
     Off = 0,
@@ -50,6 +52,7 @@ public enum VibratorIntensity : byte
     High = 3,
 }
 
+[Serializable, NetSerializable]
 public enum VibratorPort : byte
 {
     On,
@@ -61,6 +64,7 @@ public enum VibratorPort : byte
     SetIntensity,
 }
 
+[Serializable, NetSerializable]
 public enum VibratorVisuals : byte
 {
     Intensity,

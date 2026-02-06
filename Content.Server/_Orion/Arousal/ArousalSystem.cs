@@ -86,6 +86,7 @@ public sealed class ArousalSystem : EntitySystem
         component.LastUpdateTime = (float)_gameTiming.CurTime.TotalSeconds;
 
         HandleArousalTransitions(uid);
+        SetArousalAlert(uid);
     }
 
     public void DecreaseArousal(EntityUid uid, float amount)
@@ -102,6 +103,7 @@ public sealed class ArousalSystem : EntitySystem
         component.LastUpdateTime = (float)_gameTiming.CurTime.TotalSeconds;
 
         HandleArousalTransitions(uid);
+        SetArousalAlert(uid);
     }
 
     public void HandleArousalTransitions(EntityUid uid)
