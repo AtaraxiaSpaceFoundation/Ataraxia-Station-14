@@ -11,7 +11,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server._Orion.Vibrator;
 
-public sealed class VibratorSystem : EntitySystem
+public sealed partial class VibratorSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly JitteringSystem _jitter = default!;
@@ -56,37 +56,41 @@ public sealed class VibratorSystem : EntitySystem
 
             if (EntityManager.HasComponent<ArousalComponent>(component.User.Value))
             {
-                var arousalRate = GetArousalRate(component.Intensity);
+                var arousalRate = GetArousalRate(component);
                 _arousalSystem.IncreaseArousal(component.User.Value, arousalRate * frameTime);
             }
 
-            var jitterChancePerSecond = GetJitterChance(component.Intensity) / 100f;
+            var jitterChancePerSecond = GetJitterChance(component) / 100f;
             var jitterChancePerFrame = 1f - MathF.Pow(1f - jitterChancePerSecond, frameTime);
             if (_random.Prob(jitterChancePerFrame))
                 _jitter.DoJitter(component.User.Value, TimeSpan.FromSeconds(1), true, 2, 2);
         }
     }
 
-    private float GetArousalRate(VibratorIntensity intensity)
+    private float GetArousalRate(VibratorComponent component)
     {
-        return intensity switch
+        var multiplier = component.Intensity switch
         {
-            VibratorIntensity.Low => 2f,
-            VibratorIntensity.Medium => 5f,
-            VibratorIntensity.High => 10f,
+            VibratorIntensity.Low => 0.2f,
+            VibratorIntensity.Medium => 0.5f,
+            VibratorIntensity.High => 1.0f,
             _ => 0f,
         };
+
+        return component.ActiveArousalAmount * multiplier;
     }
 
-    private int GetJitterChance(VibratorIntensity intensity)
+    private int GetJitterChance(VibratorComponent component)
     {
-        return intensity switch
+        var multiplier = component.Intensity switch
         {
-            VibratorIntensity.Low => 10,
-            VibratorIntensity.Medium => 25,
-            VibratorIntensity.High => 50,
+            VibratorIntensity.Low => 0.25f,
+            VibratorIntensity.Medium => 0.625f,
+            VibratorIntensity.High => 1.0f,
             _ => 0,
         };
+
+        return (int)(component.JitterProbability * multiplier);
     }
 
     private void OnEquipped(EntityUid uid, VibratorComponent component, ref ClothingGotEquippedEvent args)
@@ -113,8 +117,11 @@ public sealed class VibratorSystem : EntitySystem
     private void OnItemToggled(EntityUid uid, VibratorComponent component, ItemToggledEvent args)
     {
         component.IsActive = args.Activated;
-        if (!args.Activated)
-            component.Intensity = VibratorIntensity.Off;
+
+         if (!args.Activated)
+             component.Intensity = VibratorIntensity.Off;
+         else if (component.Intensity == VibratorIntensity.Off)
+            component.Intensity = VibratorIntensity.Low;
 
         _audioSystem.Stop(component.Stream);
 
@@ -180,9 +187,6 @@ public sealed class VibratorSystem : EntitySystem
     {
         if (!component.IsActive && intensity != VibratorIntensity.Off)
             Activate(uid);
-
-        if (intensity != VibratorIntensity.Off && component.Intensity == VibratorIntensity.Off)
-            intensity = intensity;
 
         component.Intensity = intensity;
 

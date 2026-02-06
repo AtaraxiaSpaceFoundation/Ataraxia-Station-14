@@ -21,7 +21,7 @@ public sealed partial class VibratorComponent : Component
     public SoundSpecifier? VibrationSound;
 
     [DataField]
-    public AudioParams AudioParams = AudioParams.Default.WithVolume(-8f).WithVariation(0.25f).WithLoop(true).WithMaxDistance(1);
+    public AudioParams AudioParams = AudioParams.Default.WithVolume(-6f).WithVariation(0.25f).WithLoop(true).WithMaxDistance(1);
 
     [ViewVariables]
     public EntityUid? Stream;
