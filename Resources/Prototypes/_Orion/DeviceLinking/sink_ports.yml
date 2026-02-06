@@ -1,0 +1,19 @@
+- type: sinkPort
+  id: SetLow
+  name: signal-port-name-set-low
+  description: signal-port-description-set-low
+
+- type: sinkPort
+  id: SetMedium
+  name: signal-port-name-set-medium
+  description: signal-port-description-set-medium
+
+- type: sinkPort
+  id: SetHigh
+  name: signal-port-name-set-high
+  description: signal-port-description-set-high
+
+- type: sinkPort
+  id: SetIntensity
+  name: signal-port-name-set-intensity
+  description: signal-port-description-set-intensity
