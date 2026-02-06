@@ -36,4 +36,31 @@ public sealed partial class VibratorComponent : Component
     /// </summary>
     [DataField]
     public float ArousalAmount = 10f;
+
+    [DataField]
+    public VibratorIntensity Intensity = VibratorIntensity.Off;
+}
+
+public enum VibratorIntensity : byte
+{
+    Off = 0,
+    Low = 1,
+    Medium = 2,
+    High = 3,
+}
+
+public enum VibratorPort : byte
+{
+    On,
+    Off,
+    Toggle,
+    SetLow,
+    SetMedium,
+    SetHigh,
+    SetIntensity,
+}
+
+public enum VibratorVisuals : byte
+{
+    Intensity,
 }

@@ -8,10 +8,13 @@
   },
   "states": [
     {
-      "name": "icon"
+      "name": "base"
     },
     {
-      "name": "icon-on",
+      "name": "off"
+    },
+    {
+      "name": "on",
       "delays": [
         [
           0.1,

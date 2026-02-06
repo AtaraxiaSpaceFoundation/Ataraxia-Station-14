@@ -8,10 +8,13 @@
   },
   "states": [
     {
-      "name": "icon"
+      "name": "base"
     },
     {
-      "name": "icon-on-low",
+      "name": "off"
+    },
+    {
+      "name": "low",
       "delays": [
         [
           0.1,
@@ -26,7 +29,7 @@
       ]
     },
     {
-      "name": "icon-on-medium",
+      "name": "medium",
       "delays": [
         [
           0.08,
@@ -41,7 +44,7 @@
       ]
     },
     {
-      "name": "icon-on-hard",
+      "name": "hard",
       "delays": [
         [
           0.06,
