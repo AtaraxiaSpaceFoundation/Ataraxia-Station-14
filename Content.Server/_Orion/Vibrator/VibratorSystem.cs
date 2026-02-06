@@ -37,13 +37,13 @@ public sealed class VibratorSystem : EntitySystem
         var query = EntityQueryEnumerator<VibratorComponent>();
         while (query.MoveNext(out _, out var component))
         {
-            if (component.User is null || component is { IsActive: false, IsTogglable: true })
+            if (component.User is null || !component.IsActive)
                 continue;
 
             if (_entityManager.HasComponent<ArousalComponent>(component.User.Value))
-                _arousalSystem.IncreaseArousal(component.User.Value, component.ActiveArousalAmount);
+                _arousalSystem.IncreaseArousal(component.User.Value, component.ActiveArousalAmount * frameTime);
 
-            if (_random.Next(1, 101) <= component.JitterProbablity)
+            if (_random.Next(1, 101) <= component.JitterProbability)
                 _jitter.DoJitter(component.User.Value, TimeSpan.FromSeconds(1), true, 2, 2);
         }
     }
@@ -58,10 +58,11 @@ public sealed class VibratorSystem : EntitySystem
 
     private void OnUnequipped(EntityUid uid, VibratorComponent component, ref ClothingGotUnequippedEvent args)
     {
+        var user = component.User;
         component.User = null;
 
-        if (_entityManager.HasComponent<ArousalComponent>(component.User))
-            _arousalSystem.IncreaseArousal(component.User.Value, component.ArousalAmount);
+        if (user is { } userId && _entityManager.HasComponent<ArousalComponent>(userId))
+            _arousalSystem.IncreaseArousal(userId, component.ArousalAmount);
     }
 
     private void OnItemToggled(EntityUid uid, VibratorComponent component, ItemToggledEvent args)

@@ -5,7 +5,7 @@
   components:
   - type: Vibrator
     isTogglable: true
-    jitterProbablity: 70
+    jitterProbability: 70
     vibrationSound: /Audio/_Orion/Effects/Devices/vibration_loop.ogg
   - type: DeviceNetwork
     deviceNetId: Wireless
@@ -32,7 +32,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/egg_pink_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -42,7 +42,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/egg_teal_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -52,7 +52,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/green_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -62,7 +62,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/pink_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -72,7 +72,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/red_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -82,7 +82,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/teal_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -92,7 +92,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/yellow_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -102,7 +102,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/magic_wand_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -112,7 +112,7 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/ring_pink_vibrator.rsi
-    icon: icon
+    state: icon
 
 - type: entity
   parent: BaseVibrator
@@ -122,4 +122,4 @@
   components:
   - type: Sprite
     sprite: _Orion/Objects/Devices/Vibrators/ring_teal_vibrator.rsi
-    icon: icon
+    state: icon

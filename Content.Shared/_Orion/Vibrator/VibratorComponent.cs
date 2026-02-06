@@ -12,7 +12,7 @@ public sealed partial class VibratorComponent : Component
     public bool IsActive = false;
 
     [DataField]
-    public int JitterProbablity = 40;
+    public int JitterProbability = 40;
 
     [DataField]
     public bool IsTogglable;
