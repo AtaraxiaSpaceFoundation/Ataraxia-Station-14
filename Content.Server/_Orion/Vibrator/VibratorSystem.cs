@@ -15,10 +15,10 @@ public sealed class VibratorSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly JitteringSystem _jitter = default!;
-    [Dependency] private readonly EntityManager _entityManager = default!;
     [Dependency] private readonly ItemToggleSystem _itemToggleSystem = default!;
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly ArousalSystem _arousalSystem = default!;
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
 
     public override void Initialize()
     {
@@ -54,14 +54,15 @@ public sealed class VibratorSystem : EntitySystem
             if (component.User is null || !component.IsActive)
                 continue;
 
-            if (_entityManager.HasComponent<ArousalComponent>(component.User.Value))
+            if (EntityManager.HasComponent<ArousalComponent>(component.User.Value))
             {
                 var arousalRate = GetArousalRate(component.Intensity);
                 _arousalSystem.IncreaseArousal(component.User.Value, arousalRate * frameTime);
             }
 
-            var jitterChance = GetJitterChance(component.Intensity);
-            if (_random.Next(1, 101) <= jitterChance)
+            var jitterChancePerSecond = GetJitterChance(component.Intensity) / 100f;
+            var jitterChancePerFrame = 1f - MathF.Pow(1f - jitterChancePerSecond, frameTime);
+            if (_random.Prob(jitterChancePerFrame))
                 _jitter.DoJitter(component.User.Value, TimeSpan.FromSeconds(1), true, 2, 2);
         }
     }
@@ -92,7 +93,7 @@ public sealed class VibratorSystem : EntitySystem
     {
         component.User = args.Wearer;
 
-        if (_entityManager.HasComponent<ArousalComponent>(component.User))
+        if (EntityManager.HasComponent<ArousalComponent>(component.User.Value))
             _arousalSystem.IncreaseArousal(component.User.Value, component.ArousalAmount);
 
         UpdateVisuals(uid, component);
@@ -103,7 +104,7 @@ public sealed class VibratorSystem : EntitySystem
         var user = component.User;
         component.User = null;
 
-        if (user is { } userId && _entityManager.HasComponent<ArousalComponent>(userId))
+        if (user is { } userId && EntityManager.HasComponent<ArousalComponent>(userId))
             _arousalSystem.IncreaseArousal(userId, component.ArousalAmount);
 
         UpdateVisuals(uid, component);
@@ -128,7 +129,9 @@ public sealed class VibratorSystem : EntitySystem
         switch (args.Port)
         {
             case "On":
-                Activate(uid, component);
+                Activate(uid);
+                if (component.Intensity == VibratorIntensity.Off)
+                    SetIntensity(uid, component, VibratorIntensity.Low);
                 break;
             case "Off":
                 Deactivate(uid, component);
@@ -137,7 +140,7 @@ public sealed class VibratorSystem : EntitySystem
                 if (component.IsActive)
                     Deactivate(uid, component);
                 else
-                    Activate(uid, component);
+                    Activate(uid);
                 break;
             case "SetLow":
                 SetIntensity(uid, component, VibratorIntensity.Low);
@@ -152,17 +155,19 @@ public sealed class VibratorSystem : EntitySystem
                 if (args.Data != null &&
                     args.Data.TryGetValue("intensity", out var intensityObj) &&
                     Enum.TryParse<VibratorIntensity>(intensityObj?.ToString(), out var intensity))
-                    SetIntensity(uid, component, intensity);
+                {
+                    if (intensity == VibratorIntensity.Off)
+                        Deactivate(uid, component);
+                    else
+                        SetIntensity(uid, component, intensity);
+                }
                 break;
         }
     }
 
-    private void Activate(EntityUid uid, VibratorComponent component)
+    private void Activate(EntityUid uid)
     {
         _itemToggleSystem.TryActivate(uid);
-
-        if (component.Intensity == VibratorIntensity.Off)
-            SetIntensity(uid, component, VibratorIntensity.Low);
     }
 
     private void Deactivate(EntityUid uid, VibratorComponent component)
@@ -174,7 +179,10 @@ public sealed class VibratorSystem : EntitySystem
     private void SetIntensity(EntityUid uid, VibratorComponent component, VibratorIntensity intensity)
     {
         if (!component.IsActive && intensity != VibratorIntensity.Off)
-            Activate(uid, component);
+            Activate(uid);
+
+        if (intensity != VibratorIntensity.Off && component.Intensity == VibratorIntensity.Off)
+            intensity = intensity;
 
         component.Intensity = intensity;
 
@@ -190,7 +198,6 @@ public sealed class VibratorSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        _entityManager.EntitySysManager.GetEntitySystem<SharedAppearanceSystem>()
-            .SetData(uid, VibratorVisuals.Intensity, component.Intensity);
+        _appearance.SetData(uid, VibratorVisuals.Intensity, component.Intensity);
     }
 }
