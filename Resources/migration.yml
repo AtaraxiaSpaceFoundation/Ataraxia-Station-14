@@ -101,7 +101,9 @@
 # SPDX-FileCopyrightText: 2025 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
 # SPDX-FileCopyrightText: 2025 JustinWinningham <justinmwinningham@gmail.com>
 # SPDX-FileCopyrightText: 2025 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 LevitatingTree <114672939+LevitatingTree@users.noreply.github.com>
@@ -119,6 +121,7 @@
 # SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 # SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 # SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
 # SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
@@ -155,7 +158,7 @@ DefaultStationBeaconInteQSizo37: DefaultStationBeaconInteQSizo73
 MagazineBoxLight57x28InteQ: MagazineBoxPistolInteQ
 MagazineBoxLight762x39InteQ: MagazineBoxLightRifleInteQ
 
-AirlockHatchBasik: AirlockHatchInteQVanguardLocked
+AirlockHatchBasik: AirlockHatchInteQ
 
 BackmenVendingMachineCigs: RandomVending
 BackmenVendingMachineCola: RandomVending
@@ -246,19 +249,15 @@ SpawnMobGuardERTUnitSecurity: null
 WeaponDominatorNT: WeaponDisabler
 WindoorMTFMedicalLocked: WindoorSecureCentralCommandLocked
 
-GunSafeRifleLecter: GunSafeRifleLecterAlertLocked
-GunSafeSubMachineGunDrozd: GunSafeSubMachineGunDrozdAlertLocked
-GunSafeShotgunEnforcer: GunSafeShotgunEnforcerAlertLocked
-GunSafeShotgunKammerer: GunSafeShotgunKammererAlertLocked
-GunSafeSubMachineGunWt550: GunSafeSubMachineGunWt550AlertLocked
-GunSafeLaserCarbine: GunSafeLaserCarbineAlertLocked
-GlassBoxLaserFilled: GlassBoxLaserFilledAlertLocked
+GunSafeRifleLecter: GunSafeRandomHeavyRifleAlertLocked
+GunSafeSubMachineGunDrozd: GunSafeRandomLightRifleAlertLocked
+GunSafeShotgunEnforcer: GunSafeRandomAutoShotgunAlertLocked
+GunSafeShotgunKammerer: GunSafeRandomPumpShotgunAlertLocked
+GunSafeSubMachineGunWt550: GunSafeRandomSubMachineGunAlertLocked
+GunSafeLaserCarbine: GunSafeRandomLaserCarbineAlertLocked
+GunSafePistolMk58: GunSafeRandomPistolAlertUnlocked
 
-EnergyChemDispenser: ChemDispenser
-ChemDispenserEmpty: ChemDispenser
-MiniChemDispenserEmpty: MiniChemDispenser
-BoozeDispenserEmpty: BoozeDispenser
-SodaDispenserEmpty: SodaDispenser
+ClothingBackpackDuffelSurgeryFilled: SurgerykitFilled
 
 BaseSecretDoorAssembly: null
 
@@ -267,6 +266,23 @@ PowerCellMicroreactorPrinted: PowerCellBluespaceReactorPrinted
 PowerCellAntiqueProto: PowerCellInfinite
 
 ClothingUnderSocksBee: ClothingSocksBee
+
+ConstructionBarricade: Barricade
+FishingRodGoon: FishingRod
+FishingRodGolden: FishingRod
+PlushieHuman: ToySpawner
+PlushieArachind: ToySpawner
+PlushieDiona: ToySpawner
+DrinkGinAndSonic: RandomDrinkGlass
+DrinkGoldenCat: RandomDrinkGlass
+DrinkPineappleBlast: RandomDrinkGlass
+DrinkTorpedoJuice: RandomDrinkGlass
+DrinkBeesKnees: RandomDrinkGlass
+ImmovableRodSkibidi: ImmovableRod
+MobRatKingBuff: MobRatKing
+
+BoozeDispenserEmpty: BoozeDispenser
+SodaDispenserEmpty: SodaDispenser
 
 # Orion-End
 
@@ -646,7 +662,7 @@ VehicleSecwayStealObjective: null
 #VehicleKeyJanicart: null Goobstation - Re-add vehicles
 #VehicleKeySecway: null Goobstation - Re-add vehicles
 #VehicleKeyATV: null Goobstation - Re-add vehicles
-VehicleKeySkeleton: null 
+VehicleKeySkeleton: null
 #VehicleKeySyndicateSegway: null Goobstation - Re-add vehicles
 #VehicleKeySkeletonMotorcycle: null Corvax Goobstation - Re-add vehicles
 #VehicleSecway: null Goobstation - Re-add vehicles
@@ -1180,3 +1196,9 @@ ClothingNeckHeadphones: ClothingMultipleHeadphones
 
 # 2025-10-09
 FoodDonutJellySlugcat: FoodDonutJellyScurret
+
+# 2026-01-04
+GhostBarSpawner: null
+
+# 2026-01-10 Goobstation Change Mapped Chem to Energy Chem by default
+ChemDispenser: EnergyChemDispenser

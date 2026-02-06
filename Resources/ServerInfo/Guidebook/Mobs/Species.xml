@@ -14,7 +14,7 @@
     <GuideEntityEmbed Entity="MobHuman" Caption="Человек"/>
     <GuideEntityEmbed Entity="MobIPCDummy" Caption="КПБ"/>
     <GuideEntityEmbed Entity="MobMoth" Caption="Мотылёк"/>
-    <GuideEntityEmbed Entity="MobOni" Caption="Они"/>
+    <GuideEntityEmbed Entity="MobOni" Caption="Ёкай"/>
     <GuideEntityEmbed Entity="MobReptilian" Caption="Ящеролюд"/>
     <GuideEntityEmbed Entity="MobResomi" Caption="Резоми"/>
     <GuideEntityEmbed Entity="MobRodentia" Caption="Родентия"/>
@@ -27,6 +27,9 @@
     <GuideEntityEmbed Entity="MobYowie" Caption="Йови"/>
     <GuideEntityEmbed Entity="MobChitinid" Caption="Хитинид"/>
     <GuideEntityEmbed Entity="MobFeroxi" Caption="Ферокси"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobShadowkin" Caption="Shadowkin"/>
   </Box>
 
 </Document>

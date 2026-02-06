@@ -154,7 +154,6 @@
 # SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
 # SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
-# SPDX-FileCopyrightText: 2025 Kutosss <162154227+Kutosss@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Minemoder5000 <minemoder50000@gmail.com>
 # SPDX-FileCopyrightText: 2025 Preston Smith <92108534+thetolbean@users.noreply.github.com>
@@ -201,6 +200,12 @@
     Telecrystal: 13 # goob - this +1 mag = 15 TC
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 - type: listing
   id: UplinkRevolverPython
@@ -211,6 +216,12 @@
     Telecrystal: 20 # goob - Originally was 65 TC but was not used due to high cost. and the same happened at 40 TC. +2 mags = 30 TC.
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 # Inbuilt suppressor so it's sneaky + more expensive.
@@ -223,6 +234,12 @@
     Telecrystal: 17 # goob - this +1 mag = 20 TC
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 # Poor accuracy, slow to fire, cheap option
@@ -235,6 +252,12 @@
     Telecrystal: 4 # goob
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 - type: listing
   id: UplinkEsword
@@ -247,6 +270,12 @@
   saleLimit: 2 # Goob - 2 eswords = desword
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 - type: listing
   id: UplinkEnergyDagger
@@ -258,6 +287,12 @@
     Telecrystal: 10 # goob
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -270,6 +305,12 @@
     Telecrystal: 20 # goob - Pretty weak, but resusable ranged crit potential shouldn't be less.
   categories:
     - UplinkWeaponry
+    #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -278,9 +319,15 @@
   description: uplink-gloves-north-star-desc
   productEntity: ClothingHandsGlovesNorthStar
   cost:
-    Telecrystal: 30 # goob
+    Telecrystal: 40 # goob
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -292,12 +339,13 @@
     Telecrystal: 30 # goob
   categories:
   - UplinkWeaponry
- # Goobstation - no
- #conditions:
- #  - !type:StoreWhitelistCondition
- #    blacklist:
- #      tags:
- #        - NukeOpsUplink
+#Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
+
 
 
 - type: listing
@@ -322,6 +370,12 @@
     Telecrystal: 75 # goob
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -334,6 +388,12 @@
     Telecrystal: 50 # goob unbunde update
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 - type: listing
   id: UplinkEstoc # goob unbundle
@@ -342,11 +402,17 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/estoc.rsi, state: icon }
   productEntity: WeaponRifleEstoc # goob unbundle
   cost:
-    Telecrystal: 55 # goob unbundle
+    Telecrystal: 60 # goob unbundle
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
-# Orion-Edit-Start: Removed
+# Orion-Edit: Removed
 #- type: listing
 #  id: UplinkBulldog #goob
 #  name: uplink-buldog-name #goob
@@ -357,8 +423,12 @@
 #    Telecrystal: 60 # goob
 #  categories:
 #  - UplinkWeaponry
-# Orion-Edit-End
-
+#  #Goobstation
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    blacklist:
+#      tags:
+#      - ContractorUplink
 
 - type: listing
   id: UplinkGrenadeLauncherBundle
@@ -370,6 +440,12 @@
     Telecrystal: 150 # goob
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -382,6 +458,12 @@
     Telecrystal: 100 # goob
   categories:
   - UplinkWeaponry
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 # Explosives
@@ -399,6 +481,7 @@
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -426,6 +509,7 @@
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -442,6 +526,7 @@
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -486,7 +571,12 @@
     Telecrystal: 18 # goob
   categories:
     - UplinkExplosives
+#Goobstation
   conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
   - !type:BuyerWhitelistCondition
     blacklist:
       components:
@@ -579,10 +669,12 @@
   categories:
     - UplinkExplosives
   restockTime: 1800
+#Goobstation
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 - type: listing
@@ -613,6 +705,7 @@
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -629,6 +722,7 @@
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -645,6 +739,7 @@
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -671,6 +766,12 @@
     Telecrystal: 2 # goob - Ammo should be cheap.
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 # For the C20R
 - type: listing
@@ -680,9 +781,15 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
   productEntity: MagazinePistolSubMachineGun
   cost:
-    Telecrystal: 5 # goob - Ammo should be cheap. 96 dmg per TC.
+    Telecrystal: 4 # goob - Ammo should be cheap. 96 dmg per TC. # Orion-Edit: 5 > 4
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 # For the Cobra
 - type: listing
@@ -695,6 +802,12 @@
     Telecrystal: 3 # goob
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 # For the Python
 - type: listing
@@ -707,28 +820,46 @@
     Telecrystal: 3 # goob - AP, but only 6 bullets in speedloader
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 # For the mosin
 - type: listing
   id: UplinkMosinAmmo
   name: uplink-mosin-ammo-name
   description: uplink-mosin-ammo-desc
-  productEntity: MagazineBoxLightRifle
+  productEntity: MagazineBoxRifle762 # Orion-Edit: .30 > 7.62
   cost:
-    Telecrystal: 9 # goob
+    Telecrystal: 14 # goob
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 # For the Estoc
 - type: listing
   id: UplinkEstocAmmo
   name: uplink-estoc-ammo-name
   description: uplink-estoc-ammo-desc
-  productEntity: MagazineRifle
+  productEntity: MagazineLightRifle
   cost:
-    Telecrystal: 5 # goob - on par with c20
+    Telecrystal: 7 # goob - higher ammo cost due to .30 rifle's 40% armour piercing
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 # for the hristov
 - type: listing
@@ -740,6 +871,12 @@
     Telecrystal: 10 # goob
   categories:
   - UplinkAmmo
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 #- type: listing # Goob - why does it even exists?
 #  id: UplinkAmmoBundle
@@ -796,6 +933,12 @@
     Telecrystal: 20 # goob
   categories:
   - UplinkChemicals
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 # Goobstaiton - Disable Zombie Kit
@@ -869,7 +1012,7 @@
   description: uplink-stimkit-desc
   productEntity: StimkitFilled
   cost:
-    Telecrystal: 40 # goob
+    Telecrystal: 20 # goob # Orion-Edit: 40 > 20
   categories:
   - UplinkChemicals
 
@@ -1010,7 +1153,7 @@
   description: uplink-bribe-desc
   productEntity: BriefcaseSyndieLobbyingBundleFilled
   cost:
-    Telecrystal: 20 # goob
+    Telecrystal: 10 # goob # Orion-Edit: 20 > 10
   categories:
     - UplinkDeception
   conditions: # EE Plasmeme Change: Plasmamen get another listing.
@@ -1035,7 +1178,7 @@
   icon: { sprite: /Textures/Objects/Tools/Decoys/operative_decoy.rsi, state: folded }
   productEntity: ClothingBackpackDuffelSyndicateDecoyKitFilled
   cost:
-    Telecrystal: 20 # goob - total meme item.
+    Telecrystal: 15 # goob - total meme item. # Orion-Edit 20 > 15
   categories:
   - UplinkDeception
 
@@ -1093,6 +1236,12 @@
     Telecrystal: 25 # goob
   categories:
   - UplinkDisruption
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -1105,6 +1254,12 @@
     Telecrystal: 20 # goob
   categories:
     - UplinkDisruption
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -1171,7 +1326,12 @@
     Telecrystal: 32 # goob - worse synd bomb. Requires real skill to pull off. Can get 3, but that blocks any decent item. Bomb balancing applies here.
   categories:
   - UplinkDisruption
+  #Goobstation
   conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
   - !type:BuyerWhitelistCondition
       blacklist:
         components:
@@ -1221,10 +1381,12 @@
     Telecrystal: 100 # goob
   categories:
   - UplinkDisruption
+  #Goobstation
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
       - ContravendUplink
   - !type:BuyerWhitelistCondition
@@ -1241,10 +1403,12 @@
     Telecrystal: 200 # goob
   categories:
   - UplinkDisruption
+  #Goobstation
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
       - ContravendUplink
   - !type:BuyerWhitelistCondition
@@ -1281,7 +1445,12 @@
     Telecrystal: 60 # goob
   categories:
     - UplinkDisruption
-
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 - type: listing
   id: UplinkCameraBug
@@ -1302,13 +1471,14 @@
   icon: { sprite: /Textures/Objects/Misc/guardian_info.rsi, state: icon }
   productEntity: BoxHoloparasite
   cost:
-    Telecrystal: 70 # goob
+    Telecrystal: 60 # goob # Orion-Edit: 70 > 60
   categories:
   - UplinkAllies
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -1322,12 +1492,13 @@
     Telecrystal: 70 # goob
   categories:
   - UplinkAllies
+  #Goobstation
   conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-          - NukeOpsUplink
-          - ContravendUplink
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
+      - ContravendUplink
 
 
 # Goobstation - Nukeop reinforcement
@@ -1418,10 +1589,12 @@
     Telecrystal: 10 # goob
   categories:
   - UplinkAllies
+  #Goobstation
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
+      - ContractorUplink
       - NukeOpsUplink
 
 
@@ -1435,11 +1608,13 @@
     Telecrystal: 30 # goob
   categories:
     - UplinkAllies
+  #Goobstation
   conditions:
-    - !type:StoreWhitelistCondition
-      blacklist:
-        tags:
-        - ContravendUplink
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
+      - ContravendUplink
 
 
 - type: listing
@@ -1470,7 +1645,7 @@
   icon: { sprite: /Textures/Clothing/Back/Backpacks/backpack.rsi, state: icon }
   productEntity: StorageImplanter
   cost:
-    Telecrystal: 40 # goob
+    Telecrystal: 30 # goob # Orion-Edit: 40 > 30
   categories:
     - UplinkImplants
   conditions:
@@ -1499,7 +1674,7 @@
   icon: { sprite: /Textures/Structures/Specific/anomaly.rsi, state: anom4 }
   productEntity: ScramImplanter
   cost:
-    Telecrystal: 15 # goob - can be useful, but does nothing on its own
+    Telecrystal: 20 # goob - can be useful, but does nothing on its own # Orion-Edit: 15 > 20
   categories:
     - UplinkImplants
 
@@ -1511,7 +1686,7 @@
   icon: { sprite: /Textures/Mobs/Species/Human/parts.rsi, state: full }
   productEntity: DnaScramblerImplanter
   cost:
-    Telecrystal: 25 # goob
+    Telecrystal: 20 # goob # Orion-Edit: 25 > 20
   categories:
     - UplinkImplants
 
@@ -1553,7 +1728,12 @@
     Telecrystal: 20 # goob
   categories:
   - UplinkImplants
+  #Goobstation
   conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
   # goob - traitor suicide implants
   #- !type:StoreWhitelistCondition
   #  whitelist:
@@ -1576,11 +1756,13 @@
   categories:
     - UplinkImplants
   restockTime: 1800
+#Goobstation
   conditions:
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
-        - NukeOpsUplink
+      - ContractorUplink
+      - NukeOpsUplink
 
 # Goobstation - Fix nukeops macrobomb restock
 - type: listing
@@ -1607,9 +1789,15 @@
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 20 # goob # goob - traitor suicide implants
+    Telecrystal: 10 # goob # goob - traitor suicide implants # Orion-Edit: 20 > 10
   categories:
     - UplinkImplants
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
   # goob - traitor suicide implants
   #conditions:
   #  - !type:StoreWhitelistCondition
@@ -1617,21 +1805,23 @@
   #      tags:
   #        - NukeOpsUplink
 
-#  id: UplinkUplinkImplanter # Orion-Edit: Moved to preferences
-#  name: uplink-uplink-implanter-name
-#  description: uplink-uplink-implanter-desc
-#  icon: { sprite: /Textures/Objects/Devices/communication.rsi, state: radio }
-#  productEntity: UplinkImplanter
-#  cost:
-#    Telecrystal: 10 # goob
-#  categories:
-#  - UplinkImplants
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      blacklist:
-#       tags:
-#          - NukeOpsUplink
-
+- type: listing
+  id: UplinkUplinkImplanter # uplink uplink real
+  name: uplink-uplink-implanter-name
+  description: uplink-uplink-implanter-desc
+  icon: { sprite: /Textures/Objects/Devices/communication.rsi, state: radio }
+  productEntity: UplinkImplanter
+  cost:
+    Telecrystal: 10 # goob
+  categories:
+  - UplinkImplants
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
+      - NukeOpsUplink
 
 - type: listing
   id: UplinkDeathRattle
@@ -1676,6 +1866,12 @@
     Telecrystal: 10 # goob
   categories:
   - UplinkWearables
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -1709,7 +1905,11 @@
     Telecrystal: 4 # goob
   categories:
   - UplinkWearables
-
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 - type: listing
   id: UplinkChameleon
@@ -1799,6 +1999,12 @@
     Telecrystal: 20 # goob
   categories:
   - UplinkWearables
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -1811,6 +2017,12 @@
     Telecrystal: 50 # goob
   categories:
   - UplinkWearables
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
 
 
 - type: listing
@@ -1840,6 +2052,12 @@
     Telecrystal: 75 # goob
   categories:
   - UplinkWearables
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
   #conditions: # Goobstation - no fuck you
   #- !type:StoreWhitelistCondition
   #  whitelist:
@@ -1857,6 +2075,12 @@
     Telecrystal: 75 # goob
   categories:
   - UplinkWearables
+  #Goobstation
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - ContractorUplink
   #conditions: # Goobstation - no fuck you
   #- !type:StoreWhitelistCondition
   # whitelist:
@@ -1877,6 +2101,7 @@
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
+          - ContractorUplink
           - NukeOpsUplink
 
 # Goobstation - Explosive gloves
@@ -1951,7 +2176,7 @@
   description: uplink-cat-ears-desc
   productEntity: ClothingHeadHatCatEars
   cost:
-    Telecrystal: 130 # goob
+    Telecrystal: 100 # goob # Orion-Edit: 130 > 100
   categories:
   - UplinkPointless
 

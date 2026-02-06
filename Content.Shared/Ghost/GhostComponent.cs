@@ -68,7 +68,7 @@ public sealed partial class GhostComponent : Component
     /// May not reflect actual time of death if this entity has been paused,
     /// but will give an accurate length of time <i>since</i> death.
     /// </remarks>
-    [DataField, AutoPausedField]
+    [DataField, AutoNetworkedField, AutoPausedField] // Orion-Edit: AutoNetworkedField
     public TimeSpan TimeOfDeath = TimeSpan.Zero;
 
     /// <summary>
@@ -108,10 +108,6 @@ public sealed partial class GhostComponent : Component
     /// <remarks>Used to allow admins to change ghost colors. Should be removed if the capability to edit existing sprite colors is ever added back.</remarks>
     [DataField, AutoNetworkedField]
     public Color Color = Color.White;
-
-    // Goobstation start
-    [DataField]
-    public bool CanEnterGhostBar = true;
 
     [DataField]
     public bool CanTakeGhostRoles = true;

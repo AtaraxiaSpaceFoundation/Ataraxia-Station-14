@@ -141,13 +141,13 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 3600 #1 hr
-    - !type:RoleTimeRequirement
-      role: JobDetective
-      time: 3600 #1 hr, knowing how to use the tools is important
+      time: 18000 #5 hr
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 18000 #5 hrs
+      time: 36000 #10 hrs
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 3600 #1 hrs
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 # 10 hrs
@@ -195,11 +195,11 @@
     id: HoSPDA
     #gloves: ClothingHandsGlovesCombat - Goobstation, moved to loadouts
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponDisabler # Orion-Edit: PistolMk58 > Disabler
   storage:
     back:
     - Flash
-    - MagazinePistol
+#    - MagazinePistol # Orion-Edit: Now in loadout
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

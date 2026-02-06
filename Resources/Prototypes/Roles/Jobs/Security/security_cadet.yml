@@ -101,10 +101,10 @@
   playTimeTracker: JobSecurityCadet
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 9000 #2.5 hrs
+      time: 36000 #10 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 18000 #5 hrs
+      time: 36000 #10 hrs
       inverted: true # stop playing intern if you're good at security!
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
@@ -141,11 +141,12 @@
     ears: ClothingHeadsetAltSecurityRegular # Goobstation
     belt: ClothingBeltSecurityFilled
     #pocket1: WeaponDisabler #Goobstation (Disablers in belts)
-    pocket2: BookSecurity
+#    pocket2: BookSecurity # Orion-Edit: Removed
   storage:
     back:
+    - BookSecurity # Orion
     - Flash
-    - MagazinePistol
+#    - MagazinePistol # Orion-Edit: Removed
 
 - type: chameleonOutfit
   id: SecurityCadetChameleonOutfit

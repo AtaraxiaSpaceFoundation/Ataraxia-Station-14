@@ -70,6 +70,7 @@
     ClothingOuterCardborg: 2
     ClothingHeadHatSombrero: 2
     ClothingOuterPonchoClassic: 2
+    ClothingHeadHatBunny: 2 # Orion
     ClothingHeadHatPwig: 2
     ClothingOuterRobesJudge: 2
     ClothingOuterPoncho: 2
@@ -129,8 +130,9 @@
     ClothingNeckMantleElderLizards: 2
     # Orion-End
     ClothingOuterSuitHotDog: 1 # Goob
-    ClothingOuterSuitPickle: 1 # Goob
-#    ClothingHeadHatTinfoilHat: 2 # Goobstation | Orion-Edit - nope, only for scientists or crafting
+    ClothingOuterSuitPickle: 1
+    ClothingOuterSuitTutu: 2 # Goob
+    ClothingHeadHatTinfoilHat: 2 # Goobstation
   contrabandInventory:
     ClothingHeadHatRichard: 1
     ClothingShoesBling: 1
@@ -146,5 +148,13 @@
     ClothingShoesResonant: 1 # Goobstation
     ClothingNeckCloakResonant: 1 # Goobstation
     ClothingUniformJumpsuitResonant: 1 # Goobstation
+    # Orion-Start
+    ClothingOuterSuitCarp: 2
+    ClothingNeckCloakCarp: 1
+    ClothingNeckCloakCarpAlt: 1
+    # Orion-End
     ClothingOuterArmorHereticCostume: 1 # Goobstation
     ToyBladeEldritch: 1 # Goobstation
+  emaggedInventory: # goob
+    ClothingOuterPonchoClassicRobust: 1
+    ClothingHeadHatCowboyBrownRobust: 1
